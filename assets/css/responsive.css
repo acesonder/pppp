@@ -1,0 +1,109 @@
+/* Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .navbar-search {
+        display: none;
+    }
+    
+    .navbar-menu {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .navbar-actions .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .profile-name {
+        display: none;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .navbar-brand .brand-text {
+        font-size: 18px;
+    }
+    
+    .navbar-container {
+        height: 60px;
+    }
+    
+    .navbar-actions {
+        gap: 5px;
+    }
+    
+    .dropdown-menu {
+        min-width: 250px;
+        left: auto;
+        right: 0;
+    }
+    
+    .profile-dropdown {
+        min-width: 250px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Desktop (1200px and above) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Dark Mode Support */
+body.dark-mode {
+    --white: #1a1a1a;
+    --gray-100: #2c2c2c;
+    --gray-200: #3a3a3a;
+    --gray-300: #4a4a4a;
+    --gray-700: #e0e0e0;
+    --gray-800: #f0f0f0;
+    --gray-900: #ffffff;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .card {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .form-control {
+    background-color: #3a3a3a;
+    border-color: #4a4a4a;
+    color: #ffffff;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode .mobile-sidebar {
+    background-color: #2c2c2c;
+}
