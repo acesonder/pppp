@@ -1,0 +1,43 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Ignore uploaded files
+assets/images/uploads/*
+!assets/images/uploads/.gitkeep
+
+# Ignore configuration files with sensitive data
+# config.php contains database credentials - keep template only
+# includes/config.local.php
+
+# Ignore backup files
+*.sql.gz
+*.sql.bak
+backup/
+
+# Ignore cache files
+cache/
+tmp/
+*.cache
+
+# Ignore vendor/dependencies (if using Composer in future)
+vendor/
+node_modules/
+
+# Ignore generated documentation
+docs/generated/
